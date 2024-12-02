@@ -1,35 +1,13 @@
-# Anthon Agro LTD
+# Omorogbe Avenic Nigeria Limited
 
 This is a website built with nextjs and it is a simple website to help popularize the Anthon Agro LTD company.
-# Steps to Upload to GitHub
 
-1. Create a new repository on GitHub:
-   - Go to github.com and log in to your account.
-   - Click on the "+" button in the top right corner and select "New repository".
-   - Fill in the required information (repository name, description, etc.) and click "Create repository".
+## What we do
 
-2. Initialize a Git repository in your project:
-   - Open your terminal and navigate to your project directory.
-   - Run the command `git init` to initialize a new Git repository.
+- Printing: We offer a wide range of printing services, including business cards, brochures, flyers, and more. Our state-of-the-art printing equipment ensures high-quality prints that meet your needs.
 
-3. Add your files to the Git repository:
-   - Run the command `git add .` to stage all files in your project directory.
+- Contracts: Our contract services include drafting, reviewing, and negotiating contracts for various industries. Our team of experts will ensure that your contracts are comprehensive and protect your interests.
 
-4. Commit your changes:
-   - Run the command `git commit -m "Initial commit"` to commit your changes with a meaningful message.
+- Maritime Consult: Our maritime consulting services provide expert advice on maritime operations, logistics, and management. We help our clients navigate the complexities of the maritime industry and optimize their operations.
 
-5. Link your local repository to the GitHub repository:
-   - Run the command `git remote add origin https://github.com/your-username/your-repo-name.git` to link your local repository to the GitHub repository.
-
-6. Push your changes to GitHub:
-   - Run the command `git push -u origin master` to push your changes to the GitHub repository.
-
-7. Verify your upload:
-   - Go to your GitHub repository and verify that your files have been uploaded successfully.it` to link your local repository to the GitHub repository.
-
-6. Push your changes to GitHub:
-
-   - Run the command `git push -u origin master` to push your changes to the GitHub repository.
-
-7. Verify your upload:
-   - Go to your GitHub repository and verify that your files have been uploaded successfully.
+- Equipment Hire: We offer a variety of equipment for hire, including machinery, tools, vehicles, cranes, forklifts and maritime equipment. The equipment are well-maintained and available for short-term or long-term hire.

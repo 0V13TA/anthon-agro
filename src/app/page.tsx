@@ -1,101 +1,137 @@
-import Image from "next/image";
-
-export default function Home() {
+export default function Page() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div>
+      <section className="h-screen justify-center items-center flex" id="hero">
+        <div
+          className="grid gap-12 grid-flow-col w-3/4 items-center h-fit max-sm:grid-flow-row"
+          id="hero-content"
+        >
+          <div className="flex-col flex justify-center items-center">
+            {/* This is the logo */}
+            <div className="bg-blue-500 w-fit flex relative">
+              <div className="bg-slate-950 w-2"></div>
+              <div className="bg-slate-500 w-2"></div>
+              <div className="absolute border-white border-y w-8 bg-white left-6 top-1"></div>
+              <p className="px-2 py-1 text-white">OMOROGBE</p>
+              <div className="absolute border-white border-y w-8 bg-white right-6 bottom-1"></div>
+              <div className="bg-slate-500 w-2"></div>
+              <div className="bg-slate-950 w-2"></div>
+            </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <div className="relative pt-2 w-fit max-sm:mt-2">
+              <h1 className="text-3xl max-sm:text-2xl">
+                Omorogbe Avenic Limited
+              </h1>
+              <p className="absolute top-0 right-2 text-black font-mono text-sm">
+                RC: 7421725
+              </p>
+            </div>
+
+            <ul className="flex">
+              <li className="lists list-inside p-1 marker:text-blue-600 max-sm:list-outside max-sm:list-none">
+                Printing
+              </li>
+              <li className="lists list-inside p-1 marker:text-blue-600 max-sm:list-outside max-sm:list-none">
+                Contracts
+              </li>
+              <li className="lists list-inside p-1 marker:text-blue-600 max-sm:list-outside max-sm:list-none">
+                Maritime Consult
+              </li>
+            </ul>
+          </div>
+          <div className="relative flex h-fit">
+            <div className="absolute h-full w-1 bg-blue-500 left-0"></div>
+            <p className="ml-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+              adipisci sunt quibusdam maiores provident! Libero laboriosam non
+              quidem autem minus itaque cupiditate harum nobis fugit vero,
+              eveniet corporis neque tempore! Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Dolores nemo repellat in quas ad
+              tenetur incidunt ullam quasi culpa nisi voluptas optio, ratione
+              odio minima molestiae. Excepturi enim perferendis dignissimos.
+            </p>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+      </section>
+
+      <section id="about" className="justify-center items-center flex flex-col">
+        <h2 className="text-4xl font-bold text-left w-3/4">About us</h2>
+        <hr />
+
+        <div id="printing" className="m-3 w-3/4  p-3 flex flex-col">
+          <h3 className="text-3xl uppercase font-bold">Printing</h3>
+
+          <div className="flex w-full gap-6 max-sm:flex-col">
+            <div className="w-80 h-64 border-2 border-blue-700 flex-grow basis-full"></div>
+
+            <p>
+              We offer a wide range of printing services, including business
+              cards, brochures, flyers, and more. Our state-of-the-art printing
+              equipment ensures high-quality prints that meet your needs. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+              veritatis eius aut laborum optio sed molestias dolor incidunt,
+              consequuntur dicta soluta repudiandae nesciunt ex quos debitis,
+              iusto placeat corporis similique.
+            </p>
+          </div>
+        </div>
+
+        <div id="contracts" className="m-3 w-3/4 p-3 flex flex-col text-right">
+          <h3 className="text-3xl uppercase font-bold">Contracts</h3>
+
+          <div className="flex w-full gap-6 flex-row-reverse text-left max-sm:flex-col">
+            <div className="w-80 h-64 border-2 border-blue-700 flex-grow basis-full"></div>
+
+            <p>
+              Our contract services include drafting, reviewing, and negotiating
+              contracts for various industries. Our team of experts will ensure
+              that your contracts are comprehensive and protect your interests.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate veritatis eius aut laborum optio sed molestias dolor
+              incidunt, consequuntur dicta soluta repudiandae nesciunt ex quos
+              debitis, iusto placeat corporis similique.
+            </p>
+          </div>
+        </div>
+
+        <div id="equipment-hire" className="m-3 w-3/4 p-3 flex flex-col">
+          <h3 className="text-3xl uppercase font-bold">Equipment Hire</h3>
+
+          <div className="flex w-full gap-6 max-sm:flex-col">
+            <div className="w-80 h-64 border-2 border-blue-700 flex-grow basis-full"></div>
+            <p>
+              We offer a variety of equipment for hire, including machinery,
+              tools, vehicles, cranes, forklifts and maritime equipment. The
+              equipment are well-maintained and available for short-term or
+              long-term hire. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Cupiditate veritatis eius aut laborum optio sed molestias
+              dolor incidunt, consequuntur dicta soluta repudiandae nesciunt ex
+              quos debitis, iusto placeat corporis similique.
+            </p>
+          </div>
+        </div>
+
+        <div
+          id="maritime-consult"
+          className="m-3 w-3/4 p-3 flex flex-col text-right"
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          <h3 className="text-3xl uppercase font-bold">Maritime Consult</h3>
+
+          <div className="flex w-full gap-6 flex-row-reverse text-left max-sm:flex-col">
+            <div className="w-80 h-64 border-2 border-blue-700 flex-grow basis-full"></div>
+
+            <p>
+              Our maritime consulting services provide expert advice on maritime
+              operations, logistics, and management. We help our clients
+              navigate the complexities of the maritime industry and optimize
+              their operations. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Cupiditate veritatis eius aut laborum optio sed
+              molestias dolor incidunt, consequuntur dicta soluta repudiandae
+              nesciunt ex quos debitis, iusto placeat corporis similique.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
